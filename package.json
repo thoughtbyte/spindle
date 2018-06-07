@@ -6,6 +6,10 @@
   "repository": "git@github.com:thoughtbyte/spindle.git",
   "author": "Vincent Abruzzo <vgabruzzo@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.pug",
+    "build": "parcel build src/index.pug"
+  },
   "devDependencies": {
     "autoprefixer": "^8.6.1",
     "babel-core": "^6.26.3",
