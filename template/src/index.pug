@@ -1,0 +1,13 @@
+---
+title: Home page
+description: This is the home page
+---
+extends layouts/main.pug
+block title
+  title #{title}
+block description
+  meta(name="description" content=`${description}`)
+block content
+  p hello worlds!
+  a(href="posts.pug") posts
+

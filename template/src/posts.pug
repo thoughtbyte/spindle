@@ -1,0 +1,17 @@
+---
+title: Posts page
+description: This is the posts page
+---
+extends layouts/main.pug
+block title
+  title #{title}
+block description
+  meta(name="description" content=`${description}`)
+block content
+  a(href="index.pug") home
+  p here are all the posts:
+
+  - const posts = getPosts()
+  for post in posts
+    ul
+      li: a(href=`posts/${post.file}`) #{post.data.title}
