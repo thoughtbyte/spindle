@@ -1,6 +1,9 @@
-html
-  head
-    link(rel="stylesheet" type="text/css" href="./css/main.css")
-  body
-    h1 hello world!
-    script(src="./js/main.js")
+extends layouts/main.pug
+block title
+  title hello world!
+block description
+  meta(name="description" content="")
+block content
+  p hello worlds!
+  a(href="posts.pug") posts
+

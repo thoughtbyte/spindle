@@ -1,0 +1,12 @@
+extends layouts/main.pug
+block title
+  title posts!
+block description
+  meta(name="description" content="")
+block content
+  p here are all the posts
+  a(href="index.pug") home
+
+  - const posts = getPostFilenames()
+  for post in posts
+    p #{post}
