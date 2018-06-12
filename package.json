@@ -3,14 +3,18 @@
   "version": "0.1.0",
   "description": "a minimalistic static site generator",
   "main": "index.js",
+  "bin": {
+    "spin": "./index.js"
+  },
   "repository": "git@github.com:thoughtbyte/spindle.git",
   "author": "Vincent Abruzzo <vgabruzzo@gmail.com>",
   "license": "MIT",
-  "scripts": {
-    "dev": "parcel src/index.pug",
-    "build": "parcel build src/index.pug"
-  },
-  "devDependencies": {
-    "chalk": "^2.4.1"
+  "scripts": {},
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.15.1",
+    "cosmiconfig": "^5.0.5",
+    "fs-extra": "^6.0.1",
+    "inquirer": "^6.0.0"
   }
 }
