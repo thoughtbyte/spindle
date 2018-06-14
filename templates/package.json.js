@@ -1,9 +1,10 @@
-{
-  "name": "placeholder",
+const packageJson = data =>
+`{
+  "name": ${data.name},
   "version": "0.1.0",
-  "description": "placeholder",
-  "repository": "placeholder",
-  "author": "placeholder",
+  "description": ${data.description},
+  "repository": ${data.repo},
+  "author": ${data.author},
   "devDependencies": {
     "autoprefixer": "^8.6.1",
     "babel-core": "^6.26.3",
@@ -29,4 +30,6 @@
       "last 1 firefox version"
     ]
   }
-}
+}`;
+
+module.exports = packageJson;
