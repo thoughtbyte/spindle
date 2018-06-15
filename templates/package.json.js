@@ -1,7 +1,6 @@
 const packageJson = data =>
-  `
-{
-  "name": "${data.name}",
+`{
+  "name": "${data.packageName}",
   "version": "0.1.0",
   "description": "${data.description}",
   "author": "${data.author}",
