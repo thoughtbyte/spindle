@@ -20,8 +20,8 @@ const packageJson = data =>
     "pug": "^2.0.3"
   },
   "scripts": {
-    "dev": "parcel ./src/index.pug",
-    "build": "parcel build ./src/**/*.pug"
+    "dev": "parcel ./src/index.pug --no-cache",
+    "build": "parcel build ./src/index.pug"
   },
   "browserslist": {
     "production": [
