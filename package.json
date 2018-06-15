@@ -1,5 +1,5 @@
 {
-  "name": "spindle",
+  "name": "spindle-cli",
   "version": "0.1.0",
   "description": "a minimalistic static site generator",
   "main": "index.js",
