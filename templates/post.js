@@ -8,7 +8,7 @@ extends ../layouts/post.pug
 block title
   title #{title}
 block description
-  meta(name="description" content=\`${description}\`)
+  meta(name="description" content=\`${data.description}\`)
 block content
   a(href="../index.pug") home
   include:markdown-it 2018-06-11-sample-post.md

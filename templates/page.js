@@ -8,7 +8,7 @@ extends layouts/main.pug
 block title
   title #{title}
 block description
-  meta(name="description" content=\`${description}\`)
+  meta(name="description" content=\`${data.description}\`)
 block content
   p hello worlds!
   a(href="posts.pug") posts

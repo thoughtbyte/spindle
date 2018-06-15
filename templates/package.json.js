@@ -1,11 +1,10 @@
 const packageJson = data =>
   `
 {
-  "name": ${data.name},
+  "name": "${data.name}",
   "version": "0.1.0",
-  "description": ${data.description},
-  "repository": ${data.repo},
-  "author": ${data.author},
+  "description": "${data.description}",
+  "author": "${data.author}",
   "devDependencies": {
     "autoprefixer": "^8.6.1",
     "babel-core": "^6.26.3",
