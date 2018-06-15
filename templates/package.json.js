@@ -1,5 +1,6 @@
 const packageJson = data =>
-`{
+  `
+{
   "name": ${data.name},
   "version": "0.1.0",
   "description": ${data.description},
@@ -20,6 +21,10 @@ const packageJson = data =>
     "postcss": "^6.0.22",
     "pug": "^2.0.3"
   },
+  "scripts": {
+    "dev": "parcel ./src/index.pug",
+    "build": "parcel build ./src/**/*.pug"
+  },
   "browserslist": {
     "production": [
       "> 1%",
@@ -30,6 +35,7 @@ const packageJson = data =>
       "last 1 firefox version"
     ]
   }
-}`;
+}
+`;
 
 module.exports = packageJson;
